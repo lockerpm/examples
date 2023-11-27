@@ -1,9 +1,10 @@
+// yarn add lockerpm
+
 import { Locker } from 'lockerpm'
 
 const locker = new Locker({
-  accessKeyId: '<your access key id>',
-  accessKeySecret: '<your access key secret>',
-  apiBase: '<your api base, default is https://secrets-core.locker.io>',
+  accessKeyId: 'xxxx',
+  accessKeySecret: 'xxxxx',
 })
 
 async function saveWallet(address: string, privateKey: string) {
@@ -14,9 +15,17 @@ async function saveWallet(address: string, privateKey: string) {
 }
 
 async function getWallet(address: string) {
-  const secret = await locker.get(address)
+  const secretVal = await locker.get(address)
   return {
     address,
-    privateKey: secret.value,
+    privateKey: secretVal,
   }
+}
+
+async function listWallets() {
+  const secrets = await locker.list()
+  return secrets.map((secret) => ({
+    address: secret.key,
+    privateKey: secret.value,
+  }))
 }
