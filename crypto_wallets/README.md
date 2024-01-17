@@ -28,4 +28,4 @@ Follow these steps to store and retrieve private keys of crypto wallets using Lo
 
 1. Install the SDK based on your [programming language](https://support.locker.io/en/locker-secrets-manager/developer-tools/secrets-sdk).
 
-2. Integrate the SDK into your code by using [examples](store_retrieve_private_keys.ts)
+2. Integrate the SDK into your code by using [examples](store_retrieve_private_keys.js)
