@@ -4,7 +4,7 @@ const lockerpm = require('lockerpm')
 
 const locker = new lockerpm.Locker({
   accessKeyId: 'xxxx',
-  accessKeySecret: 'xxxxx',
+  secretAccessKey: 'xxxxx',
 })
 
 async function saveWallet(address, privateKey) {
