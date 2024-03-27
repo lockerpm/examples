@@ -1,6 +1,7 @@
 ## Storing and Retrieving Private Keys of Two Different Environments with Locker
 
-Managing the private keys of two different environments is a critical aspect of devops. In this example, we'll demonstrate how to use Locker Secrets Manager to securely store and retrieve private
+Managing the private keys of two different environments is a critical aspect of devops. In this example, we'll
+demonstrate how to use Locker Secrets Manager to securely store and retrieve private
 keys of 2 environment (ex staging and product)
 
 ### Getting Started
@@ -30,7 +31,35 @@ Follow these steps to store and retrieve private keys of 2 environments using Lo
 
 #### Step 3: Store and retrieve Private Key using Locker SDK
 
-1. Install the SDK based on
-   your [programming language](https://support.locker.io/en/locker-secrets-manager/developer-tools/secrets-sdk).
+1. Install the SDK
+
+   1.1. Install for .NET project
+
+   Using the .NET Core command-line interface tools
+
+   ```shell
+   dotnet add package lockerpm
+   ```
+   Using NuGet command-line interface
+
+   ```shell
+   nuget install lockerpm
+   ```
+   1.2. Install for Java Project
+   
+    Maven users
+
+    ```xml
+    <dependency>
+       <groupId>io.locker</groupId>
+       <artifactId>lockerpm</artifactId>
+       <version>0.0.3</version>
+    </dependency>
+    ```
+    Gradle users
+           
+    ```
+    implementation 'io.locker:lockerpm:0.0.3'
+    ```
 
 2. Integrate the SDK into your code by using [examples](../multiple_environments/)
