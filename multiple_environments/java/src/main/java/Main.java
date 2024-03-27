@@ -7,10 +7,7 @@ import locker.param.secret.SecretCreateParams;
 
 public class Main {
     public static void main(String[] args) {
-        LockerClient client = new LockerClient(
-                "95443edf-eb33-4fae-a66d-c264d14e7217",
-                "C+NCA5fwzJeCh3R4O3Dw4YLAbJrrvgJt1bJSe1BEhrY="
-        );
+        LockerClient client = new LockerClient();
         EnvironmentCreateParams stagingEnvParams = EnvironmentCreateParams
                 .builder()
                 .setName("staging")
