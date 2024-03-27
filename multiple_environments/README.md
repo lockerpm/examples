@@ -33,4 +33,4 @@ Follow these steps to store and retrieve private keys of 2 environments using Lo
 1. Install the SDK based on
    your [programming language](https://support.locker.io/en/locker-secrets-manager/developer-tools/secrets-sdk).
 
-2. Integrate the SDK into your code by using [examples](src/main/java/Main.java)
+2. Integrate the SDK into your code by using [examples](../multiple_environments/)
