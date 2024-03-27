@@ -2,9 +2,10 @@
 
 const lockerpm = require('lockerpm')
 
+// You should not hardcode access key credentials. Instead, load them from environment variables
 const locker = new lockerpm.Locker({
-  accessKeyId: 'xxxx',
-  secretAccessKey: 'xxxxx',
+  accessKeyId: process.env.LOCKER_ACCESS_KEY_ID,
+  secretAccessKey: process.env.LOCKER_ACCESS_KEY_SECRET,
 })
 
 async function saveWallet(address, privateKey) {
