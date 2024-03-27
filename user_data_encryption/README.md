@@ -1,6 +1,6 @@
 ## Encrypting the Sensitive Data of User with Locker
 
-If your system has some sensitive user data such as addresses, identification card, bank accounts, etc..., 
+If your system has some sensitive user data such as addresses, identification cards, bank accounts, etc..., 
 you should not save directly to the database. The data should be encrypted before saving to the database.
 Managing the encryption key is a critical issue. In this example, we'll demonstrate how to create, save, 
 and use these encryption keys in the process of encrypting and decrypting sensitive user data.

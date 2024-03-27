@@ -35,7 +35,7 @@ def get_encryption_key(user_id):
 
 def test_user_data_encryption():
     user_id = "user_id_0001"
-    # The sensitive data is like address, identity card, bank account, etc...
+    # The sensitive data are like addresses, identity cards, bank accounts, etc.
     sensitive_user_data = "IDENTITY_CARD_NUMBER"
     # Generate an encryption key to encrypt sensitive data
     encryption_key = generate_encryption_key()
@@ -49,7 +49,8 @@ def test_user_data_encryption():
     # Now, you can save the encrypted data in your database,...
     print("Encrypted data: ", cipher_text)
 
-    # When you want to decrypt the data from your database, retrieve the encryption from Locker Secrets and decrypt data
+    # When you want to decrypt the data from your database, retrieve the encryption from Locker Secrets
+    # and decrypt the data
     decryption_key = get_encryption_key(user_id=user_id)
     decrypt_cipher = AES.new(b64decode(decryption_key.encode('utf-8')), AES.MODE_CBC, iv)
     plain_data = unpad(decrypt_cipher.decrypt(cipher_text), BLOCK_SIZE)
