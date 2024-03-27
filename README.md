@@ -40,6 +40,7 @@ This repository includes practical examples illustrating the use of Locker Secre
 
 - [Example 1: Storing and Retrieving Private Keys of Crypto Wallets](crypto_wallets/README.md)
 - [Example 2: Encrypting the Sensitive Data of User](user_data_encryption/README.md)
+- [Example 3: Storing and Retrieving Private Keys of Two Different Environments](multiple_environments/README.md)
 - [Example 4: API Keys management](api_key_management/README.md)
 
 ## Contributing
