@@ -33,7 +33,31 @@ Follow these steps to encrypt data of users using Locker:
 
 ### Step 3: Encrypt your data using Locker SDK
 
-1. Install the SDK based on your [programming language](https://support.locker.io/en/locker-secrets-manager/developer-tools/secrets-sdk).
+1. Install the Python SDK
+
+- **Creating a Virtual Environment**
+
+```
+python3 -m venv projectenv
+```
+
+- **Activating the Virtual Environment**
+
+On Linux/MacOS
+```
+source projectenv/bin/activate
+```
+
+On Windows
+```
+projectenv\Scripts\activate
+```
+
+- **Install the Python SDK**
+
+```
+pip install -r requirements.txt
+```
 
 2. Integrate the SDK into your code by using [examples](api_key_management.py)
 
