@@ -1,10 +1,12 @@
 ## API Key management
 
-A web application calls an external service with an API that is not generally open without prior authorization.
-An API key is not a form of authorization itself; it is used as an identity verifier. The API Key Consists of 2 fields:
-Client ID – identifies who you are; Client secret – shared secret between you and the server. API key is never 
-stored locally with the application on disk. In this example, we'll demonstrate how to Locker Secrets Manager to 
-securely store and retrieve API Keys.
+A web application interacts with an external service through an API, which typically requires prior authorization for access. An API key serves as an identity verifier rather than a form of authorization. 
+
+It comprises two essential fields: 
+- `Client ID` - which identifies the user, 
+- `Client Secret` - a shared confidential code between the user and the server. 
+
+It's crucial to note that the API key should never be stored locally on the application's disk. In this example, we'll showcase how to utilize the Locker Secrets Manager to securely store and retrieve API keys.
 
 
 ### Getting Started
