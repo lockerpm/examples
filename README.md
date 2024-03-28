@@ -14,6 +14,12 @@ Locker Secrets Manager is a robust and user-friendly tool designed for managing 
 
 - **DevOps Support:** Locker is designed to meet the demands of modern DevOps practices, enabling secure secret management in continuous integration and deployment pipelines.
 
+- **Access Control:** Locker allows you to control access to secrets, ensuring that only authorized users or systems can retrieve sensitive information.
+
+- **Logging and Auditing:** Locker provides comprehensive logging and auditing capabilities, allowing you to track access to secrets and maintain compliance with security policies.
+
+- **Secret Scanning:** Locker includes built-in scanning functionality to detect and identify secrets within your project, helping you proactively identify and mitigate security risks.
+
 ## Getting Started
 
 To start using Locker Secrets Manager in your project, follow these steps:
