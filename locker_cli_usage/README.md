@@ -25,17 +25,6 @@ Follow these steps to encrypt data of users using Locker:
 
 5. Paste the MySQL username and password into the designated field and save the secret.
 
-### Step 3: Interact with secrets using CLI
+#### Step 3: Interact with secrets using CLI
 
-1. Login MySQL database securely
-```
-locker secret get --name=MYSQL_PASSWORD | mysql -h example.database.com -u admin -p
-```
-2. Set system variables to run local application
-``` 
-locker secret set && python manage.py runserver
-```
-3. Export environment variables to .env file
-```
-locker secret list > .env
-```
+Follow other examples to see how we can manage sensitive data securely
